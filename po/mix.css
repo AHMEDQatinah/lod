@@ -1,0 +1,332 @@
+:root {
+    --primarycolor: #9f9c9c;
+    --seconedarycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #1c1b1b;
+    --bgcolor-2: #22282a;
+    --padding: 8%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background-color: var(--bgcolor-1);
+}
+
+section {
+    border-bottom: 4px solid var(--primarycolor);
+    border-top: 4px solid var(--primarycolor);
+}
+
+/* ***************************section 1القسم الأول ********************************* */
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.first-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+.title-1 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--primarycolor);
+    margin-top: 20px;
+    padding: 0;
+    transition: 0.5s;
+    line-height: 0.8em;
+}
+
+.title-1 span {
+    position: relative;
+    text-transform: uppercase;
+    display: block;
+    /* transition: 0.5s; */
+
+}
+
+.title-1 span:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 0;
+    width: 50%;
+    height: 10px;
+    background: var(--lightcolor);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.title-1:hover span:nth-child(1):before {
+    transform: scaleX(1);
+}
+
+
+.title-1 span:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 0;
+    width: 50%;
+    height: 10px;
+    background: var(--lightcolor);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.title-1:hover span:nth-child(2):before {
+    transform: scaleX(1);
+}
+
+.title-1 span {
+    transition: 0.5s;
+}
+
+.title-1:hover span {
+    transition-delay: 0.5s;
+    color: var(--lightcolor);
+    letter-spacing: 15px;
+}
+
+.title-1:hover span:nth-child(1) {
+    padding-right: 30px;
+}
+
+.title-1:hover span:nth-child(2) {
+    padding-right: 40px;
+}
+
+/******/
+
+.container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 10px 40px 40px 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.container .box {
+    background: var(--bgcolor-2);
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container .box:hover {
+    background: var(--primarycolor);
+}
+
+.container .box img {
+    position: relative;
+    max-width: 200px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.container .box:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.container .box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.container .box:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.container .box:nth-child(5) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+@media(max-width:991px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+    }
+
+    .container .box {
+        grid-column: unset ! important;
+        grid-row: unset ! important;
+    }
+}
+
+/******************** End of Section 1 نهاية القسم الاول***********************/
+
+
+
+/* ******************** section 2  القسم الثاني******************************* */
+
+.main-circle {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+
+.main-circle .circle {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-circle .circle.circle1 {
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+
+.main-circle .circle.circle2 {
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+
+.main-circle h1 {
+    color: var(--primarycolor);
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+
+}
+
+.main-circle p {
+    color: #fff;
+    text-align: justify;
+}
+
+.main-circle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/******************** End of Section 2 نهاية القسم الثاني***********************/
+
+
+
+
+/******************** Section 3  Contact us القسم الثالث تواصل معنا*************************/
+.section-3 {
+        width: 100%;
+        background-color: #171718;
+        display: flex;
+        align-items: center;
+        padding: 0 10rem 4rem 0;
+    }
+
+    .contact-wrapper {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        display: flex;
+        margin-bottom: 4rem;
+    }
+
+    .contact-details div {
+        width: 20rem;
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .contact-details i {
+        font-size: 5rem;
+        color: #7a1010;
+    }
+
+    .contact-details h3 {
+        font-family: "MADE Soulmaze", sans-serif;
+        font-size: 1.3rem;
+        margin: 2rem 0;
+        color: #ccc;
+    }
+
+    .contact-details p {
+        font-size: 1.2rem;
+        color: #aaa;
+    }
+
+    .contact-wrapper h1 {
+        font-size: 2rem;
+        color: #ccc;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+
+    .contact-form {
+        width: 55rem;
+        padding:  0  0 0 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1.2rem;
+        background-color: #444;
+        color: #eee;
+        border: none;
+        margin-bottom: 1rem;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+    }
+
+    .contact-form textarea {
+        max-width: 100%;
+        max-height: 10rem;
+        min-height: 3.5rem;
+    }
+
+    .contact-form input[type="submit"] {
+        background-color: #7a1010;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact-form input[type="submit"]:hover {
+        background-color: #5f0303;
+    }
+    
+/******************** End of Section 3 نهاية القسم الثالث***********************/

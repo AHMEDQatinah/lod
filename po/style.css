@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #172e1d;
+}
+
+.square {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 200px;
+    font-size: xx-large;
+}
+
+
+
+.image {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.image img:hover {
+    transform: scale(1.9);
+    opacity: 0.6;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+}
+
+header h1 {
+    font-family: Calibri;
+    float: left;
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    color: antiquewhite;
+    float: left;
+    margin-right: 21px;
+
+}
+
+a:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(71, 133, 105);
+
+    font-family: Calibri;
+}
+
+a {
+    color: rgb(71, 133, 105);
+}
+
+a:hover {
+    text-decoration: underline;
+
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+#jumbo1 {
+    background-image: url("FH1mpQmWUAEqUWm.jpg");
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 100px;
+
+}
+
+#jumbo1 h2 {
+    float: right;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgb(17, 22, 15);
+    font-size: 48px;
+    font-family: Calibri;
+}
+
+#jumbo1 p {
+    position: absolute;
+    width: 700px;
+    font-size: 25px;
+    top: 280px;
+    right: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.ebra {
+    position: absolute;
+    bottom: 250px;
+    right: 60px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+}
+
+#featuer-1 {
+    background: url("download\ \(4\).jpg") top center no-repeat;
+    background-size: 100px 100px;
+    background-color: #fff;
+    padding-top: 12px;
+}
+
+#featuer-2 {
+    background: url("images\ \(2\).jpg") top center no-repeat;
+    background-size: 100px 100px;
+    background-color: #fff;
+}
+
+#featuer-3 {
+    background: url("download.png") top center no-repeat;
+    background-size: 100px 100px;
+    background-color: #fff;
+}
+
+#content {
+
+    margin-top: 17px;
+
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+article {
+    overflow: hidden;
+    background-color: #000000;
+    margin-bottom: 14px;
+    padding: 20px;
+}
+
+.read a:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: Calibri;
+}
+
+.read a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+article h2 a {
+    color: #ffffff;
+    border-bottom: 1px dotted #000000;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+article h2 a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+article p {
+    font-size: 19px;
+    font-family: Calibri;
+    float: left;
+    width: 65%;
+}
+
+
+article img {
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 9px;
+    float: right;
+    width: 300px;
+    height: 300px;
+}
+
+.read {
+    float: right;
+    margin-right: 23px;
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+footer {
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#first-foot {
+    overflow: hidden;
+    border-bottom: 2px solid #ccc;
+    margin-left: 200px;
+}
+
+#first-foot ul {
+    float: left;
+
+    list-style-type: none;
+    width: 260px;
+    margin-right: 30px;
+}
+
+footer h3 {
+    color: #000000;
+    border-bottom: 1px dotted #000000;
+}
+
+#second-foot {
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 27px;
+}
+
+.contact-box {
+    width: 50%;
+    height: auto;
+    box-shadow: 0 0 20px 0;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.outter {
+    background: url(images/stars1.png);
+
+
+}
+
+
+
+
+body {
+    background: linear-gradient(#293a32);
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #fff;
+
+
+    text-align: center;
+}
+
+
+video {
+    padding: 20px 5px;
+}
+
+.outter {
+    background: url(images/stars1.png);
+
+
+}
+
+.field {
+    width: 700px;
+    height: 40px;
+    margin-top: 30px;
+
+
+}
+
+.Cards {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.Card {
+    display: inline-block;
+    width: 21em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 10px 40px 60px 40px;
+    transition: 0.7s ease;
+    color: rgb(3, 3, 3);
+    text-align: center;
+}
+
+.Card img {
+    transition-duration: 1s;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.Card p {
+    line-height: 1.8;
+}
+
+.Card img:hover {
+    transform: scale(0.8);
+
+}
+
+img {
+    border-radius: 8-535-83-28908093%;
+}
+
+#features {
+    text-align: center;
+    width: 900px;
+
+}
+
+#features ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-top: 110px;
+}
+
+#features ul li {
+    float: left;
+
+    border: 1px solid #ccc;
+    height: 420px;
+    width: 280px;
+    margin-right: 10px;
+    padding-top: 110px;
+
+}
+
+#featuer-1 {
+    background: url("download\ \(4\).jpg") top center no-repeat;
+    background-size: 100px 100px;
+    background-color: #fff;
+    padding-top: 12px;
+}
+
+#featuer-2 {
+    background: url("images\ \(2\).jpg") top center no-repeat;
+    background-size: 100px 100px;
+    background-color: #fff;
+}
+
+#featuer-3 {
+    background: url("download.png") top center no-repeat;
+    background-size: 100px 100px;
+    background-color: #fff;
+}
+
+.color {
+    color: #000000;
+}
+
+.theee {
+    text-align: center;
+}
+
+.qaz {
+    background-color: #293a32;
+}
+
+
+.title {
+    color: #000000;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px black;
+}
+
+.videos {
+    display: flex;
+    width: 100%;
+}
+
+.v1 {
+    width: 50%;
+}
+
+.qw {
+    font-size: 40px;
+    margin: 30px auto;
+    color: #fff;
+}
+
+.socials a {
+    display: inline-block;
+    font-size: 2.5em;
+    padding: 15px;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+.socials a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+
+}
+
+.qp {
+    margin: 29px 20px;
+}
+
+.as {
+    margin: 20px;
+}
+
+.zx {
+    margin: 20px 20px 30px 20px;
+}
+
+#ry,
+#doller {
+    border: 3px solid rgb(103, 164, 149);
+    border-radius: 8px;
+    outline: none;
+    width: 350px;
+    height: 45px;
+    padding: 10px 30px;
+}
+
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.one,
+.two,
+.three {
+    width: 50px;
+    height: 50px;
+    background-color: #172e1d;
+    border-radius: 50%;
+    color: #fff;
+    padding-top: 10px;
+    margin: 8px;
+}
+.one{
+    color: #ffffff;
+}
+.two{
+    color: #ffffff;
+}
+.three{
+    color: #ffffff;
+}
